@@ -7,7 +7,17 @@ import { COLORS } from "@/constants/theme";
 
 export default function Tablayout() {
   return (
-    <Tabs screenOptions={{tabBarShowLabel: false,
+    <Tabs screenOptions={{tabBarShowLabel: false,headerShown: false,
+      tabBarActiveTintColor: COLORS.primary,
+      tabBarInactiveTintColor: COLORS.grey,
+      tabBarStyle: {
+        backgroundColor: COLORS.surfaceLight,
+        borderTopWidth: 0,
+        elevation: 0,
+        height: 40,
+        paddingBottom: 8,
+        position: "absolute",
+      }
     }}
     >
       <Tabs.Screen name="index"
